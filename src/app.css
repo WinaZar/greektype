@@ -1,0 +1,58 @@
+:root {
+  --bg: #f7f6f2;
+  --surface: #ecebe5;
+  --text: #1f1e1c;
+  --muted: #8a877f;
+  --line: #d9d7cf;
+  --accent: #2f6fd6;
+  --bad: #d64545;
+  /* Heatmap: one hue, mixed into --surface by Key speed. */
+  --fast: #6cc07e;
+
+  /* Finger zones. */
+  --f-lp: #c77dba;
+  --f-lr: #6f8fe0;
+  --f-lm: #4fb3b3;
+  --f-li: #77b55a;
+  --f-ri: #d9a33c;
+  --f-rm: #e07f4f;
+  --f-rr: #d9617a;
+  --f-rp: #9a7be0;
+  --f-th: #9a978f;
+
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171716;
+    --surface: #242422;
+    --text: #e7e4dc;
+    --muted: #7d7a72;
+    --line: #34332f;
+    --accent: #6b9cf0;
+    --bad: #f06a6a;
+    --fast: #3e8a50;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+}
