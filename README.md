@@ -114,3 +114,9 @@ Do all the commands in the project folder.
 The words for the lessons come from [FrequencyWords](https://github.com/hermitdave/FrequencyWords) by Hermit Dave. FrequencyWords is a list of the most frequent Greek words in the OpenSubtitles 2018 corpus. The license of the word list is [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 The script `scripts/build-words.mjs` removes incorrect words and word fragments from the list. Then the script keeps the 10,000 most frequent words.
+
+## License
+
+The MIT License applies to the code. For the full text, see [LICENSE](LICENSE).
+
+The MIT License does not apply to the word list in `src/lib/words.json`. The word list has the license of its source, CC BY-SA 4.0. For more information, see [Word list](#word-list).
