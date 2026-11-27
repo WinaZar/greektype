@@ -29,7 +29,7 @@
   }
 
   span {
-    border-radius: 3px;
+    border-radius: 3px 3px 0 0;
     transition: color 0.08s;
   }
 

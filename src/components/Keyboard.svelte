@@ -67,9 +67,20 @@
     height: var(--u);
     border-radius: 6px;
     background: var(--surface);
-    border-bottom: 3px solid var(--finger);
+    padding-bottom: 3px;
     font-size: 11px;
     color: var(--muted);
+  }
+
+  /* Inset by the corner radius so the stripe stays straight. */
+  .cap::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    bottom: 0;
+    height: 3px;
+    background: var(--finger);
   }
 
   .space {
@@ -86,8 +97,11 @@
   }
 
   .inert {
-    border-bottom-color: transparent;
     opacity: 0.6;
+  }
+
+  .inert::after {
+    display: none;
   }
 
   .next {
